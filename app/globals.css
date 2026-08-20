@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --ink: #07121e; --navy: #0b1c2a; --orange: #ff5a00; --cream: #f7f6f2; --muted: #68747d; --line: #dfe3e5; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--cream); color: var(--ink); font-family: var(--font-inter), Arial, sans-serif; }
+a { color: inherit; text-decoration: none; }
+button, input, textarea, select { font: inherit; }
+button { cursor: pointer; }
+::selection { background: #ff5a00; color: #fff; }
+@media (hover: hover) and (pointer: fine) {
+  html.tevexxo-custom-cursor, html.tevexxo-custom-cursor * { cursor: none !important; }
+}
+@layer utilities {
+  .font-display { font-family: var(--font-display), sans-serif; }
+  .container-shell { width: min(1180px, calc(100% - 40px)); margin-inline: auto; }
+  .text-balance { text-wrap: balance; }
+}
